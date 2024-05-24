@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rapid Quiz - Play</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./gameStyles.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div id="loading-spinner"></div>
+        <div id="quiz" class="align-center flex-direction-column hidden">
+            <div id="status-bar">
+                <div id="status-item">
+                    <p id="question-number" class="status-prefix">Question</p>
+                    <div id="progress-indicator">
+                        <div id="progress-complete"></div>
+                    </div>
+                </div>
+                <div id="status-item">
+                    <p class="status-prefix">Points</p>
+                    <h1 class="status-main-text" id="points">0</h1>
+                </div>
+            </div>
+            <h2 id="quiz-question"></h2>
+            <div class="option-container">
+                <p class="option-prefix">A</p>
+                <p class="option-text" data-index="1"></p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">B</p>
+                <p class="option-text" data-index="2"></p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">C</p>
+                <p class="option-text" data-index="3"></p>
+            </div>
+            <div class="option-container">
+                <p class="option-prefix">D</p>
+                <p class="option-text" data-index="4"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./quiz.js"></script>
+</body>
+</html>

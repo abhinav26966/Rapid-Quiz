@@ -19,9 +19,8 @@ h4 {
 }
 
 h1 {
-    color: black;
-    font-size: 5.4rem;
     color: #56a5eb;
+    font-size: 5.4rem;
     margin-bottom: 5rem;
 }
 
@@ -43,7 +42,7 @@ h3 {
 
 /* UTILITIES */
 
-.container {
+.wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -54,25 +53,25 @@ h3 {
   padding: 2rem;
 }
 
-.container > * {
+.wrapper > * {
   width: 100%;
 }
 
-.flex-column {
+.flex-direction-column {
   display: flex;
   flex-direction: column;
 }
 
-.flex-center {
+.center-align {
   justify-content: center;
   align-items: center;
 }
 
-.justify-center {
+.align-center {
   justify-content: center;
 }
 
-.text-center {
+.text-align-center {
   text-align: center;
 }
 
@@ -81,7 +80,7 @@ h3 {
 }
 
 /* BUTTONS */
-.btn {
+.button {
   font-size: 1.8rem;
   padding: 1rem 0;
   width: 20rem;
@@ -93,14 +92,14 @@ h3 {
   background-color: white;
 }
 
-.btn:hover {
+.button:hover {
   cursor: pointer;
   box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
   transform: translateY(-0.1rem);
   transition: transform 150ms;
 }
 
-.btn[disabled]:hover {
+.button[disabled]:hover {
   cursor: not-allowed;
   box-shadow: none;
   transform: none;
